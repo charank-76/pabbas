@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page </title>
+         <script>
+            function printLog() {
+            var nameNode = document.getElementById("name");
+            var passNode = document.getElementById("pass");
+            var ageNode = document.getElementById("age");
+var emailNode = document.getElementById("email");
+var maleNode = document.getElementById("male");
+var femaleNode = document.getElementById("female");
+var phoneNode = document.getElementById("phone");
+
+var genderNode =maleNode.checked ? "male" :( femaleNode.checked ? "female" : "not specified");
+
+
+
+           
+
+            console.log(nameNode.value)
+             console.log(passNode.value)
+             console.log(ageNode.value)
+              console.log(emailNode.value)
+                console.log(genderNode)
+                 console.log(phoneNode.value)
+              
+               
+        } 
+        </script>
+    </head>
+    <center>
+    <header ><h1 >Login Page</h1></header>
+    
+       
+   
+    <body style="background-color: rgb(90, 255, 255);" onload="printLog()" >
+        <form>
+   
+        <table border="1" style="width: 60% ; height: 100% ; text-align: center; background-color: rgb(60, 242, 255); border-radius: 15px;">
+         <tr>
+                <td>
+                    <label for="name" style="font-size: 20px;">Username:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" placeholder="Username" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password "  style="font-size: 20px;">Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="pass"
+                           placeholder="Password" required >
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label for="age"  style="font-size: 20px;"">Age:</label>
+                </td>
+                <td>
+                    <input type="number" id="age"
+                           placeholder="Age"  >
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="email" style="font-size: 20px;"">Email:</label>
+                </td>
+                <td>
+                    <input type="email" id="email"
+                           placeholder="Email" required >
+                </td>
+
+
+            <tr>
+                 <tr>
+                <td>
+                    <label for="gender" style="font-size: 20px;"">Gender:</label>
+                </td>
+                <td>
+                    <label for="gender" >Male:</label>
+                    <input type="radio" id="male" name="gender">
+                          <label for="gender" >Female:</label>
+                    <input type="radio" id="female" name="gender">
+                </td>
+            </tr>
+                 <tr>
+                <td>
+                    <label for="phone" style="font-size: 20px;"">Phone Number:</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone"
+                           placeholder="number" required >
+                </td>
+</tr>
+            
+            </form>
+             </table>
+            <button onclick="printLog()" style="background-color: rgb(116, 241, 116); color:aliceblue"><a href="landing.html">Login</a></button>
+                
+             </center>
+           
+    </body>
+</html>
